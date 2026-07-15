@@ -68,9 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="first.aspx" />
+    <Content Include="img\default.jpg" />
+    <Content Include="img\e2.jpg" />
     <Content Include="registeration_form.aspx" />
     <Content Include="standd_control_demo.aspx" />
     <Content Include="Web.config" />
+    <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="first.aspx.cs">
@@ -97,6 +100,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\e3.webp" />
+    <Content Include="img\high-quality-photo-photographer-taking-260nw-2461408413.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

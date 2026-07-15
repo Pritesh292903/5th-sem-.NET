@@ -13,5 +13,11 @@ namespace _5th_sem.net
         {
 
         }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            // Refresh AdRotator every timer tick
+            AdRotator1.DataBind();
+        }
     }
 }

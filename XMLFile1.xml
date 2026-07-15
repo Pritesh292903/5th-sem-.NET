@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+
+	<Ad>
+
+		<ImageUrl>~\img\default.jpg</ImageUrl>
+		<NavigateUrl>https://www.google.com/</NavigateUrl>
+		<AlternateText>Walpaper</AlternateText>
+		<Impression>2928</Impression>
+		<keywords>Pritesh</keywords>
+		
+	</Ad>
+
+	<Ad>
+
+
+		
+		<ImageUrl>~\img\e2.jpg</ImageUrl>
+		<NavigateUrl>https://chatgpt.com/</NavigateUrl>
+		<AlternateText>calculter</AlternateText>
+		<Impression>7896</Impression>
+		<keywords>Yashgiri</keywords>
+		
+	</Ad>
+	
+</Advertisements>
+

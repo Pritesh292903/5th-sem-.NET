@@ -7,9 +7,9 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data">
 
-        <!-- Required for Timer -->
+        <!-- ScriptManager -->
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
         <div>
@@ -18,8 +18,10 @@
 
         <br />
 
+        <!-- Name -->
         <asp:Label ID="Label1" runat="server" Text="Name :"></asp:Label>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+
         <asp:RequiredFieldValidator
             ID="RequiredFieldValidator1"
             runat="server"
@@ -30,8 +32,10 @@
 
         <br /><br />
 
+        <!-- Password -->
         <asp:Label ID="Label2" runat="server" Text="Password :"></asp:Label>
         <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
+
         <asp:RequiredFieldValidator
             ID="RequiredFieldValidator2"
             runat="server"
@@ -42,8 +46,10 @@
 
         <br /><br />
 
+        <!-- Confirm Password -->
         <asp:Label ID="Label3" runat="server" Text="Confirm Password :"></asp:Label>
         <asp:TextBox ID="TextBox4" runat="server" TextMode="Password"></asp:TextBox>
+
         <asp:CompareValidator
             ID="CompareValidator1"
             runat="server"
@@ -55,8 +61,10 @@
 
         <br /><br />
 
+        <!-- Email -->
         <asp:Label ID="Label4" runat="server" Text="Email :"></asp:Label>
         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+
         <asp:RegularExpressionValidator
             ID="RegularExpressionValidator1"
             runat="server"
@@ -68,8 +76,10 @@
 
         <br /><br />
 
+        <!-- Contact -->
         <asp:Label ID="Label5" runat="server" Text="Contact :"></asp:Label>
         <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+
         <asp:RegularExpressionValidator
             ID="RegularExpressionValidator2"
             runat="server"
@@ -85,7 +95,7 @@
 
         <hr />
 
-        <!-- UpdatePanel for AdRotator -->
+        <!-- UpdatePanel -->
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
 
             <ContentTemplate>
@@ -97,21 +107,30 @@
                     Width="500px"
                     Height="300px" />
 
-                <!-- Change every 3 seconds -->
-                <asp:Timer
-                    ID="Timer1"
-                    runat="server"
-                    Interval="3000"
-                    OnTick="Timer1_Tick">
-                </asp:Timer>
+                <br /><br />
+
+                <br />
 
             </ContentTemplate>
 
-            <Triggers>
-                <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
-            </Triggers>
-
         </asp:UpdatePanel>
+
+        <hr />
+
+        <!-- File Upload -->
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+
+        <br /><br />
+
+        <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+
+        <br /><br />
+
+        <asp:Button
+            ID="Button2"
+            runat="server"
+            Text="Upload"
+            OnClick="Button2_Click" />
 
     </form>
 </body>
